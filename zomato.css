@@ -1,0 +1,202 @@
+/* Reset & basic setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Navbar */
+.nv {
+  width: 100%;
+  height: 100vh;
+  background: url('top.jpg') center/cover no-repeat; /* optional background */
+  position: relative;
+  text-align: center;
+  color:white;
+}
+
+nev {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+nev p {
+  margin: 0 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  gap: 20px;
+}
+
+/* Logo */
+.logo img {
+  width: 200px;
+  margin-top: 40px;
+}
+
+/* Hero text */
+.text h1 {
+  font-size: 28px;
+  margin-top: 40px;
+}
+
+/* Search input */
+.inp input {
+  width: 60%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Cards section */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 60px auto;
+  flex-wrap: wrap;
+}
+
+.crd {
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.crd:hover {
+  transform: scale(1.05);
+}
+
+.crd img {
+  width: 100%;
+  height: 200px; /* ✅ all images same size */
+  object-fit: cover;
+}
+
+.crd h3 {
+  margin: 10px 0 5px;
+  color: #d32f2f;
+}
+
+.crd p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Collections section */
+.coll {
+  text-align: center;
+  margin: 80px 0 30px;
+}
+
+.coll .txt h1 {
+  font-size: 28px;
+  color: #222;
+}
+
+.coll .txt p {
+  color: #777;
+  margin-top: 10px;
+}
+
+/* Restaurant images */
+.rest {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px auto 80px;
+}
+
+.rest img {
+  width: 250px;
+  height: 180px; /* ✅ all restaurant pics same size */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.rest img:hover {
+  transform: scale(1.05);
+}
+
+/* App section */
+.app {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.app h1 {
+  color: #d32f2f;
+}
+
+/* Buttons section */
+.btn {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.btn h1 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.btn button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1px solid #d32f2f;
+  background: #fff;
+  color: #d32f2f;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn button:hover {
+  background: #d32f2f;
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #f5f5f5;
+  padding: 40px 20px;
+}
+
+.footer .list h2 {
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.footer .list p {
+  color: #555;
+  margin-bottom: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer .list p:hover {
+  text-decoration: underline;
+}
